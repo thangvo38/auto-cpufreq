@@ -1146,8 +1146,8 @@ def sysinfo():
     avg_all_core_temp = float(avg_cores_temp / online_cpu_count)
 
     # print current fan speed | temporarily commented
-    # current_fans = psutil.sensors_fans()['thinkpad'][0].current
-    # print("\nCPU fan speed:", current_fans, "RPM")
+    current_fans = psutil.sensors_fans()['thinkpad'][0].current
+    print("\nCPU fan speed:", current_fans, "RPM")
 
 
 def no_stats_msg():
